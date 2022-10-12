@@ -113,9 +113,11 @@ function createMap(earthquakes) {
      zoom: 4,
      layers: [streetstylemap, earthquakes]
    });
+
    // Add the layer control to the map
    L.control.layers(baseMaps, overlayMaps, {
      collapsed: false
    }).addTo(myMap);
    legend.addTo(myMap);
+   
  }
